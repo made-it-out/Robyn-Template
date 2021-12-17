@@ -1,0 +1,47 @@
+@use '../abstracts/' as a;
+/*
+=======
+Contact
+=======
+*/
+
+.contact {
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__info{
+        color: var(--color-primary-x-dark);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: var(--font-4);
+
+        @include a.mq-min(768px){
+            font-size: var(--font-5);
+        }
+    }
+
+    &__links{
+        margin-top: 1rem;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        font-size: var(--font-7);
+    }
+
+    &__link{
+        display: block;
+        width: fit-content;
+        text-decoration: none;
+        transition: color 200ms ease-in-out, transform 200ms ease-in-out;
+
+        &:hover{
+            color: var(--color-primary);
+            transform: translateY(-.2rem);
+        }
+    }
+}

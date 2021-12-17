@@ -1,0 +1,381 @@
+/*
+=========
+Card Deck
+=========
+*/
+
+card-deck {
+    --image-width: 300px;
+    --image-height: 380px;
+    --offset: 1rem;
+    --first-move-duration: 800ms;
+    position: relative;
+    display: block;
+    overflow-x: hidden;
+    width: 100%;
+    z-index: 0;
+}
+
+.card-deck__container {
+    position: relative;
+    width: calc(var(--image-width) + var(--offset));
+    max-width: 100%;
+    margin: 0 auto 2rem;
+    padding-bottom: calc(var(--image-height) + var(--offset));
+}
+
+/*
+=================
+Starting position
+=================
+*/
+
+.card-deck__container.starting-position .card-deck__card--top{
+    top: 0;
+    left: 0;
+    z-index: 4;
+
+    &::before{
+        opacity: 0;
+    }
+}
+
+.card-deck__container.starting-position .card-deck__card--next{
+    top: 1rem;
+    left: 1rem;
+    z-index: 3;
+}
+
+.card-deck__container.starting-position .card-deck__card--bottom{
+    top: 1rem;
+    left: 1rem;
+    z-index: 0;
+}
+
+/*
+============================
+Animations for top to bottom
+============================
+*/
+.card-deck__container.top-to-bottom .card-deck__card--bottom {
+    animation-name: top-to-bottom;
+    animation-duration: var(--first-move-duration);
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.card-deck__container.top-to-bottom .card-deck__card--bottom::before {
+    animation-name: top-to-bottom-overlay;
+    animation-duration: var(--first-move-duration);
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.card-deck__container.top-to-bottom .card-deck__card--top {
+    animation-name: next-to-top;
+    animation-delay: calc(var(--first-move-duration) / 2);
+    animation-duration: calc(var(--first-move-duration) / 2);
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.card-deck__container.top-to-bottom .card-deck__card--top::before {
+    animation-name: next-to-top-overlay;
+    animation-duration: calc(var(--first-move-duration) / 2);
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.card-deck__container.top-to-bottom .card-deck__card--next {
+    animation-name: third-to-next;
+    animation-delay: calc(var(--first-move-duration) / 2);
+    animation-duration: calc(var(--first-move-duration) / 2);
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.card-deck__container.top-to-bottom .card-deck__card--next::before {
+    animation-name: third-to-next-overlay;
+    animation-delay: calc(var(--first-move-duration) / 2);
+    animation-duration: calc(var(--first-move-duration) / 2);
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+/*
+============================
+Animations for bottom to top
+============================
+*/
+.card-deck__container.bottom-to-top .card-deck__card--bottom {
+    animation-name: second-last-to-bottom;
+    animation-duration: var(--first-move-duration);
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.card-deck__container.bottom-to-top .card-deck__card--top {
+    animation-name: bottom-to-top;
+    animation-duration: var(--first-move-duration);
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.card-deck__container.bottom-to-top .card-deck__card--top::before {
+    animation-name: bottom-to-top-overlay;
+    animation-duration: var(--first-move-duration);
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.card-deck__container.bottom-to-top .card-deck__card--next {
+    animation-name: top-to-next;
+    animation-duration: calc(var(--first-move-duration) / 2);
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.card-deck__container.bottom-to-top .card-deck__card--next::before {
+    animation-name: top-to-next-overlay;
+    animation-duration: var(--first-move-duration);
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.card-deck__card {
+    position: absolute;
+    top: var(--offset);
+    left: var(--offset);
+    max-width: var(--image-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+    flex-shrink: 0;
+    z-index: 1;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-deck__card::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .9;
+
+}
+
+.card-deck__card:nth-child(even)::before {
+    background-color: var(--color-secondary);
+}
+
+.card-deck__card:nth-child(odd)::before {
+    background-color: var(--color-primary);
+}
+
+.card-deck__card--top {
+    z-index: 3;
+}
+
+.card-deck__card--next {
+    z-index: 2;
+}
+
+.card-deck__card--bottom {
+    z-index: 4;
+}
+
+.card__img {
+    width: 100%;
+    max-height: var(--image-height);
+    height: var(--image-height);
+    object-fit: cover;
+    object-position: center center;
+}
+
+.card-deck__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card-deck__button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-7);
+    border: none;
+    color: var(--color-primary);
+    background-color: transparent;
+    transition: color 200ms ease-in-out;
+}
+
+.card-deck__button:hover,
+.card-deck__button:focus {
+    color: var(--color-primary-x-dark);
+}
+
+/*
+=========
+Keyframes
+=========
+*/
+
+@keyframes top-to-bottom {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    50% {
+        transform: translateX(-100%);
+        z-index: 4;
+        top: 0;
+        left: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        z-index: 0;
+        top: var(--offset);
+        left: var(--offset);
+    }
+}
+
+@keyframes next-to-top {
+    0% {
+        z-index: 4;
+    }
+
+    100% {
+        z-index: 4;
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes third-to-next {
+    100% {
+        z-index: 3;
+    }
+}
+
+@keyframes bottom-to-top {
+    0% {
+        z-index: 0;
+    }
+
+    50% {
+        transform: translateX(-100%);
+        z-index: 0;
+    }
+
+    51% {
+        z-index: 4;
+    }
+
+    100% {
+        transform: translateX(0);
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
+}
+
+@keyframes top-to-next {
+    0% {
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
+
+    1% {
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    100% {
+        top: var(--offset);
+        left: var(--offset);
+        z-index: 3;
+    }
+}
+
+@keyframes second-last-to-bottom {
+    0% {
+        z-index: 0;
+    }
+
+    100% {
+        z-index: 0;
+    }
+
+}
+
+@keyframes next-to-top-overlay {
+    0% {
+        opacity: .9;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes third-to-next-overlay {
+    0% {
+        opacity: .9;
+    }
+
+    100% {
+        opacity: .9;
+    }
+}
+
+@keyframes top-to-bottom-overlay {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .9;
+    }
+}
+
+@keyframes bottom-to-top-overlay {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes top-to-next-overlay {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .9;
+    }
+}

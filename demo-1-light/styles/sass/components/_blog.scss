@@ -1,0 +1,62 @@
+@use '../abstracts/'as a;
+
+/*
+====
+Blog
+====
+*/
+
+.blog {
+    &__post {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__button{
+        margin: auto;
+    }
+}
+
+.post {
+    &__img-container {
+        position: relative;
+        overflow: hidden;
+        transition: filter 300ms ease-out;
+
+        &:hover {
+            filter: grayscale(90%);
+        }
+    }
+
+    &__img {
+        max-height: 350px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__tag-and-date {
+        display: flex;
+        justify-content: space-between;
+        font-size: var(--font-4);
+    }
+
+    &__title {
+        color: var(--color-primary-x-dark);
+        font-size: var(--font-5);
+        transition: color 200ms ease-in-out;
+
+        &:hover {
+            color: var(--color-primary)
+        }
+
+        @include a.mq-min(768px) {
+            font-size: var(--font-6);
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
