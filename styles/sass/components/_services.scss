@@ -1,0 +1,95 @@
+@use '../abstracts/' as a;
+/*
+========
+Services
+========
+*/
+
+.services{
+    &__service-container:nth-child(odd) &__service{
+        position: relative;
+        background-color: var(--color-primary-dark);
+        overflow: hidden;
+        
+        &::before{
+            background-image: url('../../assets/bamboo-secondary.png');
+        }
+
+        &:hover{
+            box-shadow: 0px 2px 10px 0px rgba(127, 143, 156,0.9);
+        }
+
+        .service{
+            &__price{
+                color:var(--color-secondary);
+            }
+            &__title{
+                color: var(--color-white);
+            }
+            &__description{
+                color: var(--color-primary-light);
+            }
+        }
+    }
+
+    &__service-container:nth-child(even) &__service{
+        position: relative;
+        background-color: var(--color-secondary);
+        overflow: hidden;
+        
+        &::before{
+            background-image: url('../../assets/bricks-dark.png');
+        }
+
+        &:hover{
+            box-shadow: 0px 2px 10px 0px rgba(244, 241, 143,0.9);
+        }
+
+        .service{
+            &__price{
+                color:var(--color-primary-x-dark);
+            }
+            &__title{
+                color: var(--color-primary-x-dark);
+            }
+            &__description{
+                color: var(--color-primary-dark);
+            }
+        }
+    }
+
+    &__service{
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.5);
+        transition: box-shadow 200ms ease-in-out;
+
+        &::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: .05;
+        }
+    }
+}
+
+.service{
+    &__price{
+        font-size: var(--font-4);
+    }
+    &__title{
+        font-size: var(--font-8);
+    }
+    &__description{
+        font-size: var(--font-4);
+    }
+}

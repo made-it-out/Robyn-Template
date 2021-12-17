@@ -1,0 +1,21 @@
+@forward './reset';
+@forward './colors';
+@forward './typography';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-primary-x-dark);
+    font-family: var(--font-sans);
+
+    &.body {
+
+        &--modal-open,
+        &--navbar-shown {
+            overflow-y: hidden;
+            position: fixed;
+        }
+    }
+}

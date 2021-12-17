@@ -1,0 +1,111 @@
+@use '../abstracts/'as a;
+/*
+======
+Header
+======
+*/
+
+.header {
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    color: var(--color-primary-x-light);
+    z-index: 2;
+
+    &--navbar-shown {
+        position: fixed;
+        height: 100vh;
+        overflow-y: auto;
+
+        @include a.mq-min(1025px) {
+            position: relative;
+            height: auto;
+            overflow-y: unset;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    &__toggle {
+        cursor: pointer;
+        z-index: 2;
+        font-size: var(--font-7);
+
+        @include a.mq-min(1025px) {
+            display: none;
+        }
+    }
+}
+
+.navbar {
+    z-index: 2;
+    background-color: transparent;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: background-color 400ms ease-in-out, height 400ms ease-in-out;
+
+    &--shown {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        background-color: var(--color-primary-dark);
+        font-size: var(--font-8);
+
+        /* Shorten animation delay for expanded mobile nav links */
+        .navbar__link:nth-child(1){
+            animation-delay: 400ms;
+        }
+        .navbar__link:nth-child(2){
+            animation-delay: 500ms;
+        }
+        .navbar__link:nth-child(3){
+            animation-delay: 600ms;
+        }
+        .navbar__link:nth-child(4){
+            animation-delay: 700ms;
+        }
+        .navbar__link:nth-child(5){
+            animation-delay: 800ms;
+        }
+
+        @include a.mq-min(768px) {
+            font-size: var(--font-10);
+        }
+    }
+
+    @include a.mq-min(1025px) {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+        width: auto;
+        height: auto;
+        position: unset;
+        overflow: unset;
+        font-size: var(--font-5);
+    }
+
+    &__link {
+        text-decoration: none;
+        transition: color 250ms ease-in-out;
+
+        &:hover {
+            color: var(--color-secondary);
+        }
+    }
+}

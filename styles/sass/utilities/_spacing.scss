@@ -1,0 +1,25 @@
+@use '../abstracts/' as a;
+
+/*
+=================
+Spacing utilities
+=================
+*/
+
+.heading-margin {
+    margin-bottom: 2rem;
+
+    @include a.mq-min(768px) {
+        margin-bottom: 4rem;
+    }
+}
+
+.section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @include a.mq-min(768px) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}

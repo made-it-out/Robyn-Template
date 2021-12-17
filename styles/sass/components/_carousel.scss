@@ -1,0 +1,63 @@
+/*
+========
+Carousel
+========
+*/
+
+carousel-component {
+    position: relative;
+    display: block;
+    overflow-x: hidden;
+    width: 100%;
+    z-index: 0;
+}
+
+/* Slider */
+
+.carousel__slider {
+    display: flex;
+    align-items: center;
+}
+
+.carousel__slide {
+    position: relative;
+    width: 100%;
+    min-height: min(calc(100vh - 4rem), 600px);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.carousel__button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: .5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: var(--font-4);
+    color: var(--color-primary-x-dark);
+    background-color: var(--color-secondary);
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+
+    &[name="previous"]{
+        left: 0;
+    }
+
+    &[name="next"]{
+        right: 0;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-primary-x-light);
+    }
+}
