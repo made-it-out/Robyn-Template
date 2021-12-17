@@ -1,0 +1,53 @@
+.header {
+    padding: 2rem 0;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.23);
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__logo-container {
+        grid-area: header-logo;
+        max-width: 150px;
+        position: relative;
+        align-self: center;
+
+        &:hover {
+            .header__logo--primary {
+                opacity: 0;
+            }
+
+            .header__logo--secondary {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__logo {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        transition: opacity 200ms ease-out;
+
+        &--primary {
+            position: relative;
+            opacity: 1;
+        }
+
+        &--secondary {
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        &:hover {}
+    }
+
+    &__purchase{
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
+    }
+}

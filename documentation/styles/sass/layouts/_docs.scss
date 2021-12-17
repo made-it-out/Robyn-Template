@@ -1,0 +1,146 @@
+@use '../abstracts/'as a;
+
+.docs {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.23);
+    }
+
+    &__container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        @include a.mq-min(768px) {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+    }
+
+    &__welcome,
+    &__notes {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--color-primary);
+    }
+
+    &__table {
+        border-collapse: collapse;
+        width: 100%;
+
+        @include a.mq-min(576px) {
+            border: 1px solid var(--color-dark-grey);
+        }
+
+        thead {
+            background-color: var(--color-light-grey);
+
+            tr {
+                display: none;
+
+                @include a.mq-min(576px) {
+                    display: table-row;
+                }
+            }
+        }
+
+        tr {
+            display: block;
+            margin-bottom: 2rem;
+            border: 1px solid var(--color-dark-grey);
+
+            @include a.mq-min(576px) {
+                display: table-row;
+                margin-bottom: 0;
+                border: none;
+                border-bottom: 1px solid var(--color-dark-grey);
+            }
+        }
+
+        th {
+            text-align: left;
+            display: none;
+
+            @include a.mq-min(576px) {
+                display: table-cell;
+            }
+        }
+
+        th,
+        td {
+            padding: .5rem;
+
+            &:not(:first-child) {
+                @include a.mq-min(576px) {
+                    border-left: 1px solid var(--color-dark-grey);
+                }
+            }
+
+
+        }
+
+        td {
+            display: block;
+
+            &:first-child {
+                background-color: var(--color-light-grey);
+            }
+
+            @include a.mq-min(576px) {
+                display: table-cell;
+
+                &:first-child {
+                    background-color: unset;
+                }
+            }
+        }
+
+        .pl-1 {
+            padding-left: 1.5rem;
+
+            &+td {
+                padding-left: 1.5rem;
+
+                @include a.mq-min(576px) {
+                    padding-left: .5rem;
+                }
+            }
+        }
+
+        .pl-2 {
+            padding-left: 2.5rem;
+
+            &+td {
+                padding-left: 2.5rem;
+
+                @include a.mq-min(576px) {
+                    padding-left: .5rem;
+                }
+            }
+        }
+
+        .pl-3 {
+            padding-left: 3.5rem;
+
+            &+td {
+                padding-left: 3.5rem;
+
+                @include a.mq-min(576px) {
+                    padding-left: .5rem;
+                }
+            }
+        }
+    }
+
+    code {
+        background-color: #181818;
+        padding: .2em .5em;
+        color: var(--color-white);
+    }
+}

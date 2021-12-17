@@ -105,7 +105,6 @@ html {
 }
 
 body {
-  background-color: var(--color-gray-1);
   background-color: var(--color-gray-2);
   font-family: var(--font-sans);
 }
@@ -756,8 +755,8 @@ carousel-component {
   align-items: center;
   border: none;
   font-size: var(--font-7);
-  color: var(--color-primary-x-dark);
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary-x-dark);
+  color: var(--color-secondary);
   transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 .carousel__button[name=previous] {
@@ -767,8 +766,8 @@ carousel-component {
   right: 0;
 }
 .carousel__button:hover, .carousel__button:focus {
-  background-color: var(--color-primary-x-dark);
-  color: var(--color-secondary);
+  color: var(--color-primary-x-dark);
+  background-color: var(--color-secondary);
 }
 
 /*

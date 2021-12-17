@@ -1,0 +1,65 @@
+@use '../abstracts/' as a;
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --font-family-xl-heading: 'Righteous', cursive;
+    --font-family-heading: 'Poppins', sans-serif;
+    --font-family-subheading: 'Poppins', sans-serif;
+    --font-family-body: 'Poppins', sans-serif;
+}
+
+// Font Sizes
+$fs-xl-heading: (
+    null: 2.2rem,
+    768px: 3.5rem,
+    992px: 4.5rem
+);
+$fs-heading:(
+    null: 1.75rem,
+    768px: 2.25rem,
+    992px: 2.75rem
+);
+$fs-subheading:(
+    null: 1.25rem,
+    768px: 1.5rem,
+    992px: 1.75rem
+);
+$fs-body:(
+    null: 1rem,
+    768px: 1.125rem,
+    992px: 1.25rem
+);
+$fs-small:(
+    null: .625rem,
+    768px: .75rem,
+    992px: .875rem
+);
+
+
+.xl-heading{
+    @include a.fs($fs-xl-heading);
+    font-family: var(--font-family-xl-heading);
+}
+
+.heading{
+    @include a.fs($fs-heading);
+    font-family: var(--font-family-heading);
+    font-weight: 600;
+}
+
+.subheading{
+    @include a.fs($fs-subheading);
+    font-family: var(--font-family-subheading);
+}
+
+.body, body{
+    @include a.fs($fs-body);
+    font-family: var(--font-family-body);
+}
+
+.small{
+    @include a.fs($fs-small);
+    font-family: var(--font-family-body);
+}

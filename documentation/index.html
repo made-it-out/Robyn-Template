@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap-grid.min.css"
+        integrity="sha512-MJjgE48PpWFK4ZQowkReHYVkHv9Rl3ZqdxxdbisYuR0q0qRyVHSNw52YBvc0sqT0qtJFT3dirXdEMtd1l56ZUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/css/main.css">
+    <title>Ouro Template Documentation</title>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header class="header">
+        <div class="header__container container">
+            <a href="/" class="header__logo-container">
+                <img src="/assets/logo-blue-black.png" alt="blue and black logo"
+                    class="header__logo header__logo--primary" loading="lazy" />
+                <img src="/assets/logo-blue.png" alt="blue logo" class="header__logo header__logo--secondary"
+                    loading="lazy" />
+            </a>
+
+            <a href="#" class="header__purchase btn btn--secondary btn--color-swap">Purchase Now</a>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Docs -->
+    <div class="docs">
+        <div class="docs__container container">
+            <!-- <div class="row"> -->
+                <!-- Start Accordion -->
+                <accordion-component data-multiple="true">
+                    <div class="accordion__item" data-open-by-default="true">
+                        <h1 class="accordion__heading heading">Getting Started</h1>
+                        <div class="accordion__content">
+                            <div class="docs__welcome">
+                                <h2 class="subheading">Welcome 👋</h2>
+
+                                <p>Thank you for choosing Ouro!</p>
+
+                                <p>Ouro is designed for ecommerce and fully responsive.</p>
+
+                                <p>If you have any questions, please contact us through <a
+                                        href="https://themeforest.net" target="_blank"
+                                        class="docs__link">ThemeForest</a> and we will respond as soon as
+                                    possible.</p>
+
+                                <p>We hope you enjoy using Ouro to build your website.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <h1 class="accordion__heading heading">File Structure</h1>
+                        <div class="accordion__content">
+                            <div class="docs__file-structure">
+
+
+                                <table class="docs__table">
+                                    <thead>
+                                        <tr>
+                                            <th>Path</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td><code>documentation</code></td>
+                                            <td>The documentation for the theme</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><code>theme</code></td>
+                                            <td>All the files for theme</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pl-1"><code>assets</code></td>
+                                            <td>Images and favicon</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pl-1"><code>components</code></td>
+                                            <td>Templates for the HTML components used throughout the theme</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pl-1"><code>layouts</code></td>
+                                            <td>Templates for HTML layout pages</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pl-1"><code>pages</code></td>
+                                            <td>Main theme pages with styles and scripts linked</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pl-1"><code>js</code></td>
+                                            <td>Javascript files for components and pages that require it</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pl-1"><code>styles</code></td>
+                                            <td>Theme styles</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pl-2"><code>css</code></td>
+                                            <td>Contains <code>main.css</code> file which has all of the theme's styles
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pl-2"><code>sass</code></td>
+                                            <td>Contains <code>.scss</code> files which has been compiled to
+                                                <code>main.css</code>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pl-3"><code>abstracts</code></td>
+                                            <td>Mixins for media queries</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pl-3"><code>base</code></td>
+                                            <td>CSS reset, color variables, and typography styles</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pl-3"><code>components</code></td>
+                                            <td>Styles for HTML component templates</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pl-3"><code>layouts</code></td>
+                                            <td>Styles for HTML layout templates</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pl-1"><code>index.html</code></td>
+                                            <td>Homepage</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <h1 class="accordion__heading heading">Additional Notes</h1>
+                        <div class="accordion__content">
+                            <div class="docs__notes">
+                                <p>Ouro uses <a href="https://getbootstrap.com/docs/5.0/layout/grid/" target="_blank"
+                                        class="docs__link">Bootstrap Grid</a>, <a href="https://fonts.google.com"
+                                        target="_blank" class="docs__link">Google Fonts</a>, and <a
+                                        href="https://fontawesome.com/" target="_blank" class="docs__link">Font Awesome
+                                        Icons</a> to deliver a beautiful user experience that is easy for developers to
+                                    work
+                                    with.</p>
+
+                                <p>As mentioned above, if you have any questions or need any assistance using Ouro,
+                                    don't
+                                    hesitate to reach out through <a href="https://themeforest.net" target="_blank"
+                                        class="docs__link">ThemeForest</a>.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </accordion-component>
+                <!-- End Accordion -->
+            <!-- </div> -->
+        </div>
+    </div>
+    <!-- End Docs -->
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer__bottom small">
+                        <div class="footer__bottom-links">
+                            <a href="https://themeforest.net" target="_blank" class="footer__bottom-link">Help</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="/js/accordion.js"></script>
+</body>
+
+</html>
