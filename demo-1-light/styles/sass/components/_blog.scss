@@ -31,6 +31,8 @@ Blog
     }
 
     &__img {
+        width: 100%;
+        aspect-ratio: 3 / 2;
         max-height: 350px;
         object-fit: cover;
         object-position: center;

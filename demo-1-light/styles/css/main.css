@@ -1524,6 +1524,8 @@ Blog
   filter: grayscale(90%);
 }
 .post__img {
+  width: 100%;
+  aspect-ratio: 3/2;
   max-height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
