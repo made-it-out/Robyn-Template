@@ -88,13 +88,15 @@
 
             </a>
 
-            <div class="navbar mono">
+            <a href="#MainContent" class="skip-to-main">Skip to main content</a>
+
+            <nav class="navbar mono">
                 <a href="#about" class="navbar__link aos fade-in-translate-down delay-14">About</a>
                 <a href="#portfolio" class="navbar__link aos fade-in-translate-down delay-15">Portfolio</a>
                 <a href="#services" class="navbar__link aos fade-in-translate-down delay-16">Services</a>
                 <a href="#blog" class="navbar__link aos fade-in-translate-down delay-17">Blog</a>
                 <a href="#contact" class="navbar__link aos fade-in-translate-down delay-18">Contact</a>
-            </div>
+            </nav>
 
             <div class="header__toggle">
                 <i class="fas fa-bars aos fade-in-translate-down delay-13"></i>
@@ -103,89 +105,92 @@
     </header>
     <!-- End Header -->
 
-    <!-- Start Hero -->
-    <section id="hero" class="hero">
-        <div class="hero__container container">
-            <p class="mono hero__hello aos fade-in-translate-down delay-2">Hello, I am</p>
+    <main id="MainContent">
+        <!-- Start Hero -->
+        <section id="hero" class="hero">
+            <div class="hero__container container">
+                <p class="mono hero__hello aos fade-in-translate-down delay-2">Hello, I am</p>
 
-            <h1 class="hero__name aos fade-in-translate-left delay-6 ease-out">Robyn.</h1>
+                <h1 class="hero__name aos fade-in-translate-left delay-6 ease-out">Robyn.</h1>
 
-            <h2 class="hero__summary aos fade-in-translate-right delay-10 ease-out">
-                <span class="hero__open">&#60;</span>
-                <span class="hero__tag">web-developer</span>
-                <span class="hero__close">&#47;&#62;</span>
-            </h2>
+                <h2 class="hero__summary aos fade-in-translate-right delay-10 ease-out">
+                    <span class="hero__open">&#60;</span>
+                    <span class="hero__tag">web-developer</span>
+                    <span class="hero__close">&#47;&#62;</span>
+                </h2>
 
-            <div class="hero__buttons">
-                <a href="#portfolio" class="button button--fill mono aos fade-in-translate-up delay-12">View my work</a>
+                <div class="hero__buttons">
+                    <a href="#portfolio" class="button button--fill mono aos fade-in-translate-up delay-12">View my
+                        work</a>
 
-                <a href="#" class="button button--outline mono aos fade-in-translate-up delay-14">Download CV</a>
+                    <a href="#" class="button button--outline mono aos fade-in-translate-up delay-14">Download CV</a>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- End Hero -->
+        </section>
+        <!-- End Hero -->
 
-    <!-- Start About -->
-    <section id="about" class="about section">
-        <div class="about__container container">
-            <div class="row">
-                <div class="about__info col-md-6">
-                    <h1 class="section__heading mono aos fade-in-translate-up">About Me</h1>
+        <!-- Start About -->
+        <section id="about" class="about section">
+            <div class="about__container container">
+                <div class="row">
+                    <div class="about__info col-md-6">
+                        <h1 class="section__heading mono aos fade-in-translate-up">About Me</h1>
 
-                    <p class="about__description aos fade-in-translate-up delay-3">
-                        Born and raised in Chicago, I began my web development journey 15 years ago after learning how
-                        to
-                        remove
-                        popup ads with inspect element in order to stream my favorite movies.
-                    </p>
+                        <p class="about__description aos fade-in-translate-up delay-3">
+                            Born and raised in Chicago, I began my web development journey 15 years ago after learning
+                            how
+                            to
+                            remove
+                            popup ads with inspect element in order to stream my favorite movies.
+                        </p>
 
-                    <p class="about__description aos fade-in-translate-up delay-5">
-                        I love the thrill of solving problems in creative ways. Today, I spend my time working on my
-                        upcoming
-                        app, <span class="highlight">Waterbnb</span>
-                    </p>
+                        <p class="about__description aos fade-in-translate-up delay-5">
+                            I love the thrill of solving problems in creative ways. Today, I spend my time working on my
+                            upcoming
+                            app, <span class="highlight">Waterbnb</span>
+                        </p>
+                    </div>
+
+                    <!-- Start Card Deck -->
+                    <div class="col-md-6 aos fade-in-translate-up delay-3">
+                        <card-deck>
+                            <div class="card-deck__container starting-position">
+                                <div class="card-deck__card card-deck__card--top">
+
+                                    <img src="./assets/about-1.png" class="card__img" loading="lazy">
+                                </div>
+
+                                <div class="card-deck__card card-deck__card--next">
+
+                                    <img src="./assets/about-3.png" class="card__img" loading="lazy">
+                                </div>
+
+                                <div class="card-deck__card">
+
+                                    <img src="./assets/about-2.png" class="card__img" loading="lazy">
+                                </div>
+
+                                <div class="card-deck__card card-deck__card--bottom">
+
+                                    <img src="https://images.pexels.com/photos/3973999/pexels-photo-3973999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                        class="card__img" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="card-deck__pagination">
+                                <button class="card-deck__button" name="previous">
+                                    <i class="fas fa-long-arrow-alt-left"></i>
+                                </button>
+                                <button class="card-deck__button" name="next">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </button>
+                            </div>
+                        </card-deck>
+                    </div>
+                    <!-- End Card Deck -->
                 </div>
 
-                <!-- Start Card Deck -->
-                <div class="col-md-6 aos fade-in-translate-up delay-3">
-                    <card-deck>
-                        <div class="card-deck__container starting-position">
-                            <div class="card-deck__card card-deck__card--top">
-
-                                <img src="./assets/about-1.png" class="card__img" loading="lazy">
-                            </div>
-
-                            <div class="card-deck__card card-deck__card--next">
-
-                                <img src="./assets/about-3.png" class="card__img" loading="lazy">
-                            </div>
-
-                            <div class="card-deck__card">
-
-                                <img src="./assets/about-2.png" class="card__img" loading="lazy">
-                            </div>
-
-                            <div class="card-deck__card card-deck__card--bottom">
-
-                                <img src="https://images.pexels.com/photos/3973999/pexels-photo-3973999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                    class="card__img" loading="lazy">
-                            </div>
-                        </div>
-
-                        <div class="card-deck__pagination">
-                            <button class="card-deck__button" name="previous">
-                                <i class="fas fa-long-arrow-alt-left"></i>
-                            </button>
-                            <button class="card-deck__button" name="next">
-                                <i class="fas fa-long-arrow-alt-right"></i>
-                            </button>
-                        </div>
-                    </card-deck>
-                </div>
-                <!-- End Card Deck -->
-            </div>
-
-            <!-- <div class="about__images">
+                <!-- <div class="about__images">
                 <div class="about__image-container">
                     <div class="about__image-overlay"></div>
 
@@ -202,553 +207,574 @@
                     </button>
                 </div>
             </div> -->
-        </div>
-    </section>
-    <!-- End About -->
-
-    <!-- Start Experience -->
-    <section id="experience" class="experience section">
-        <div class="experience__container container">
-            <h1 class="section__heading heading-margin mono aos fade-in-translate-up">Professional Experience</h1>
-
-            <!-- Start Tabs -->
-            <tabs-component id="experienceTabs" class="aos fade-in-translate-up delay-1">
-                <div class="tabs__headings">
-                    <p class="tabs__heading">Facebook</p>
-                    <p class="tabs__heading aos fade-in delay-2">Amazon</p>
-                    <p class="tabs__heading aos fade-in delay-4">Apple</p>
-                    <p class="tabs__heading aos fade-in delay-6">Netflix</p>
-                    <p class="tabs__heading aos fade-in delay-8">Google</p>
-                </div>
-
-                <div class="tabs__contents">
-                    <div class="tabs__content heading-margin">
-                        <h3 class="aos fade-in-translate-up delay-2">Developer Whisperer</h3>
-                        <p class="mono aos fade-in-translate-up delay-4">May, 2020 - Present</p>
-
-                        <ul>
-                            <li class="aos fade-in-translate-up delay-6">Hexagon paleo vexillologist, literally
-                                chartreuse try-hard tattooed brunch.</li>
-                            <li class="aos fade-in-translate-up delay-7">Dreamcatcher typewriter poutine mustache mlkshk
-                                artisan mixtape brunch.</li>
-                            <li class="aos fade-in-translate-up delay-8">Roof party 3 wolf moon taxidermy lyft, squid
-                                air plant paleo master cleanse</li>
-                        </ul>
-                    </div>
-
-                    <div class="tabs__content heading-margin">
-                        <h3 class="aos fade-in-translate-up delay-2">Senior Developer</h3>
-                        <p class="mono aos fade-in-translate-up delay-4">Jan, 2019 - April, 2020</p>
-
-                        <ul>
-                            <li class="aos fade-in-translate-up delay-6">Offal affogato crucifix VHS man braid sartorial
-                                migas keytar biodiesel edison bulb</li>
-                            <li class="aos fade-in-translate-up delay-7">kombucha shabby chic keffiyeh authentic vice.
-                                Iceland butcher raw denim succulents post-ironic</li>
-                            <li class="aos fade-in-translate-up delay-8">Mustache vice raw denim XOXO, vinyl ramps
-                                gentrify offal poke neutra 3 wolf moon</li>
-                        </ul>
-                    </div>
-
-                    <div class="tabs__content heading-margin">
-                        <h3 class="aos fade-in-translate-up delay-2">Front End Engineer</h3>
-                        <p class="mono aos fade-in-translate-up delay-4">Jun, 2018 - Dec, 2018</p>
-
-                        <ul>
-                            <li class="aos fade-in-translate-up delay-6">hell of four loko williamsburg echo park. Banjo
-                                literally disrupt coloring book cornhole actually</li>
-                            <li class="aos fade-in-translate-up delay-7">selvage chambray single-origin coffee poke.
-                                Mlkshk pickled green juice palo santo, meditation</li>
-                            <li class="aos fade-in-translate-up delay-8">knausgaard cornhole portland lyft unicorn
-                                succulents literally squid chia. Raw</li>
-                        </ul>
-                    </div>
-
-                    <div class="tabs__content heading-margin">
-                        <h3 class="aos fade-in-translate-up delay-2">UI Designer</h3>
-                        <p class="mono aos fade-in-translate-up delay-4">Feb, 2018 - Jun, 2018</p>
-
-                        <ul>
-                            <li class="aos fade-in-translate-up delay-6">denim williamsburg yr, crucifix put a bird on
-                                it whatever lyft schlitz seitan lomo plaid fam cray.</li>
-                            <li class="aos fade-in-translate-up delay-7">Swag la croix portland four dollar toast
-                                letterpress ugh gochujang 90's pickled bespoke food truck</li>
-                            <li class="aos fade-in-translate-up delay-8">dreamcatcher. Salvia taxidermy twee YOLO,
-                                asymmetrical echo park biodiesel mumblecore</li>
-                        </ul>
-                    </div>
-
-                    <div class="tabs__content heading-margin">
-                        <h3 class="aos fade-in-translate-up delay-2">Front End Architect</h3>
-                        <p class="mono aos fade-in-translate-up delay-4">Aug, 2016 - Jan, 2018</p>
-
-                        <ul>
-                            <li class="aos fade-in-translate-up delay-6">tilde. Photo booth glossier YOLO seitan venmo
-                                beard franzen succulents food</li>
-                            <li class="aos fade-in-translate-up delay-7">truck try-hard truffaut gastropub pork belly
-                                heirloom. Tote bag pok pok pabst, kitsch put a bird</li>
-                            <li class="aos fade-in-translate-up delay-8">on it sriracha vinyl. Copper mug glossier
-                                cornhole offal farm-to-table. XOXO woke gastropub</li>
-                        </ul>
-                    </div>
-                </div>
-            </tabs-component>
-            <!-- End Tabs -->
-
-            <div>
-                <a href="#" class="button button--outline mono aos fade-in-translate-up delay-4">Download CV</a>
             </div>
-        </div>
-    </section>
-    <!-- End Experience -->
+        </section>
+        <!-- End About -->
 
-    <!-- Start Portfolio -->
-    <section id="portfolio" class="portfolio section">
-        <div class="portfolio__container container">
-            <h1 class="section__heading heading-margin mono aos fade-in-translate-up">Latest Work</h1>
+        <!-- Start Experience -->
+        <section id="experience" class="experience section">
+            <div class="experience__container container">
+                <h1 class="section__heading heading-margin mono aos fade-in-translate-up">Professional Experience</h1>
 
-            <div class="portfolio__row row">
-                <div class="portfolio__project col-md-6 aos fade-in-translate-up">
-                    <div class="project__overview">
-                        <img src="https://images.pexels.com/photos/3209473/pexels-photo-3209473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                            alt="" class="project__img">
+                <!-- Start Tabs -->
+                <tabs-component id="experienceTabs" class="aos fade-in-translate-up delay-1">
+                    <div class="tabs__headings">
+                        <p class="tabs__heading">Facebook</p>
+                        <p class="tabs__heading aos fade-in delay-2">Amazon</p>
+                        <p class="tabs__heading aos fade-in delay-4">Apple</p>
+                        <p class="tabs__heading aos fade-in delay-6">Netflix</p>
+                        <p class="tabs__heading aos fade-in delay-8">Google</p>
+                    </div>
 
-                        <div class="project__details">
-                            <p class="project__brief">
-                                Leggings green juice mustache pickled. Waistcoat vaporware fanny pack tofu kombucha
-                                twee. Stumptown literally gentrify hammock hashtag.
+                    <div class="tabs__contents">
+                        <div class="tabs__content heading-margin">
+                            <h3 class="aos fade-in-translate-up delay-2">Developer Whisperer</h3>
+                            <p class="mono aos fade-in-translate-up delay-4">May, 2020 - Present</p>
+
+                            <ul>
+                                <li class="aos fade-in-translate-up delay-6">Hexagon paleo vexillologist, literally
+                                    chartreuse try-hard tattooed brunch.</li>
+                                <li class="aos fade-in-translate-up delay-7">Dreamcatcher typewriter poutine mustache
+                                    mlkshk
+                                    artisan mixtape brunch.</li>
+                                <li class="aos fade-in-translate-up delay-8">Roof party 3 wolf moon taxidermy lyft,
+                                    squid
+                                    air plant paleo master cleanse</li>
+                            </ul>
+                        </div>
+
+                        <div class="tabs__content heading-margin">
+                            <h3 class="aos fade-in-translate-up delay-2">Senior Developer</h3>
+                            <p class="mono aos fade-in-translate-up delay-4">Jan, 2019 - April, 2020</p>
+
+                            <ul>
+                                <li class="aos fade-in-translate-up delay-6">Offal affogato crucifix VHS man braid
+                                    sartorial
+                                    migas keytar biodiesel edison bulb</li>
+                                <li class="aos fade-in-translate-up delay-7">kombucha shabby chic keffiyeh authentic
+                                    vice.
+                                    Iceland butcher raw denim succulents post-ironic</li>
+                                <li class="aos fade-in-translate-up delay-8">Mustache vice raw denim XOXO, vinyl ramps
+                                    gentrify offal poke neutra 3 wolf moon</li>
+                            </ul>
+                        </div>
+
+                        <div class="tabs__content heading-margin">
+                            <h3 class="aos fade-in-translate-up delay-2">Front End Engineer</h3>
+                            <p class="mono aos fade-in-translate-up delay-4">Jun, 2018 - Dec, 2018</p>
+
+                            <ul>
+                                <li class="aos fade-in-translate-up delay-6">hell of four loko williamsburg echo park.
+                                    Banjo
+                                    literally disrupt coloring book cornhole actually</li>
+                                <li class="aos fade-in-translate-up delay-7">selvage chambray single-origin coffee poke.
+                                    Mlkshk pickled green juice palo santo, meditation</li>
+                                <li class="aos fade-in-translate-up delay-8">knausgaard cornhole portland lyft unicorn
+                                    succulents literally squid chia. Raw</li>
+                            </ul>
+                        </div>
+
+                        <div class="tabs__content heading-margin">
+                            <h3 class="aos fade-in-translate-up delay-2">UI Designer</h3>
+                            <p class="mono aos fade-in-translate-up delay-4">Feb, 2018 - Jun, 2018</p>
+
+                            <ul>
+                                <li class="aos fade-in-translate-up delay-6">denim williamsburg yr, crucifix put a bird
+                                    on
+                                    it whatever lyft schlitz seitan lomo plaid fam cray.</li>
+                                <li class="aos fade-in-translate-up delay-7">Swag la croix portland four dollar toast
+                                    letterpress ugh gochujang 90's pickled bespoke food truck</li>
+                                <li class="aos fade-in-translate-up delay-8">dreamcatcher. Salvia taxidermy twee YOLO,
+                                    asymmetrical echo park biodiesel mumblecore</li>
+                            </ul>
+                        </div>
+
+                        <div class="tabs__content heading-margin">
+                            <h3 class="aos fade-in-translate-up delay-2">Front End Architect</h3>
+                            <p class="mono aos fade-in-translate-up delay-4">Aug, 2016 - Jan, 2018</p>
+
+                            <ul>
+                                <li class="aos fade-in-translate-up delay-6">tilde. Photo booth glossier YOLO seitan
+                                    venmo
+                                    beard franzen succulents food</li>
+                                <li class="aos fade-in-translate-up delay-7">truck try-hard truffaut gastropub pork
+                                    belly
+                                    heirloom. Tote bag pok pok pabst, kitsch put a bird</li>
+                                <li class="aos fade-in-translate-up delay-8">on it sriracha vinyl. Copper mug glossier
+                                    cornhole offal farm-to-table. XOXO woke gastropub</li>
+                            </ul>
+                        </div>
+                    </div>
+                </tabs-component>
+                <!-- End Tabs -->
+
+                <div>
+                    <a href="#" class="button button--outline mono aos fade-in-translate-up delay-4">Download CV</a>
+                </div>
+            </div>
+        </section>
+        <!-- End Experience -->
+
+        <!-- Start Portfolio -->
+        <section id="portfolio" class="portfolio section">
+            <div class="portfolio__container container">
+                <h1 class="section__heading heading-margin mono aos fade-in-translate-up">Latest Work</h1>
+
+                <div class="portfolio__row row">
+                    <div class="portfolio__project col-md-6 aos fade-in-translate-up">
+                        <div class="project__overview">
+                            <img src="https://images.pexels.com/photos/3209473/pexels-photo-3209473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="" class="project__img">
+
+                            <div class="project__details">
+                                <p class="project__brief">
+                                    Leggings green juice mustache pickled. Waistcoat vaporware fanny pack tofu kombucha
+                                    twee. Stumptown literally gentrify hammock hashtag.
+                                </p>
+
+                                <div class="project__technologies">
+                                    <span class="project__technology mono">HTML</span>
+                                    <span class="project__technology mono">CSS</span>
+                                    <span class="project__technology mono">Javascript</span>
+                                    <span class="project__technology mono">Figma</span>
+                                </div>
+
+                                <div class="project__links">
+                                    <a href="#" class="project__link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="project__category mono aos fade-in-translate-up delay-3 ease-out">Front End</p>
+
+                        <a href="#" class="project__title aos fade-in-translate-up delay-5 ease-out">Project Title</a>
+                    </div>
+
+                    <div class="portfolio__project col-md-6 aos fade-in-translate-up delay-3">
+                        <div class="project__overview">
+                            <img src="https://images.pexels.com/photos/3753028/pexels-photo-3753028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="" class="project__img">
+
+                            <div class="project__details">
+                                <p class="project__brief">
+                                    Cold-pressed trust fund YOLO aesthetic etsy coloring book, sartorial marfa ramps
+                                    hammock
+                                    90's pug franzen. Taxidermy
+                                </p>
+
+                                <div class="project__technologies">
+                                    <span class="project__technology mono">React</span>
+                                    <span class="project__technology mono">Tailwind</span>
+                                    <span class="project__technology mono">Node</span>
+                                    <span class="project__technology mono">Express</span>
+                                </div>
+
+                                <div class="project__links">
+                                    <a href="#" class="project__link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="project__category mono aos fade-in-translate-up delay-5 ease-out">Full Stack</p>
+
+                        <a href="#" class="project__title aos fade-in-translate-up delay-7 ease-out">Project Title</a>
+                    </div>
+
+                    <div class="portfolio__project col-md-6 aos fade-in-translate-up">
+                        <div class="project__overview">
+                            <img src="https://images.pexels.com/photos/3705471/pexels-photo-3705471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="" class="project__img">
+
+                            <div class="project__details">
+                                <p class="project__brief">
+                                    Cardigan pour-over stumptown kale chips, yuccie ugh literally celiac blog hexagon
+                                    tbh
+                                    banh mi humblebrag
+                                </p>
+
+                                <div class="project__technologies">
+                                    <span class="project__technology mono">React</span>
+                                    <span class="project__technology mono">PHP</span>
+                                    <span class="project__technology mono">Photoshop</span>
+                                </div>
+
+                                <div class="project__links">
+                                    <a href="#" class="project__link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="project__category mono aos fade-in-translate-up delay-3 ease-out">Full Stack</p>
+
+                        <a href="#" class="project__title aos fade-in-translate-up delay-5 ease-out">Project Title</a>
+                    </div>
+
+                    <div class="portfolio__project col-md-6 aos fade-in-translate-up delay-3">
+                        <div class="project__overview">
+                            <img src="https://images.pexels.com/photos/3016037/pexels-photo-3016037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="" class="project__img">
+
+                            <div class="project__details">
+                                <p class="project__brief">
+                                    Adaptogen +1 jean shorts, sartorial distillery aesthetic four dollar toast tattooed.
+                                    Hell of selvage
+                                </p>
+
+                                <div class="project__technologies">
+                                    <span class="project__technology mono">React</span>
+                                    <span class="project__technology mono">Tailwind</span>
+                                    <span class="project__technology mono">Node</span>
+                                    <span class="project__technology mono">Express</span>
+                                </div>
+
+                                <div class="project__links">
+                                    <a href="#" class="project__link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="project__category mono aos fade-in-translate-up delay-5 ease-out">Full Stack</p>
+
+                        <a href="#" class="project__title aos fade-in-translate-up delay-7 ease-out">Project Title</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Portfolio -->
+
+        <!-- Start Services -->
+        <section id="services" class="services section">
+            <div class="services__container container">
+                <h1 class="section__heading heading-margin mono aos fade-in-translate-up">Services</h1>
+
+                <div class="services__row row">
+                    <div class="services__service-container col-md-6 aos fade-in-translate-up delay-3">
+                        <div class="services__service">
+                            <p class="service__price mono">From $300</p>
+
+                            <h2 class="service__title">UI Design</h2>
+
+                            <p class="service__description">
+                                Occupy heirloom kickstarter trust fund thundercats organic. Vegan la croix occupy
+                                slow-carb
+                                four loko.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="services__service-container col-md-6 aos fade-in-translate-up delay-6">
+                        <div class="services__service">
+                            <p class="service__price mono">From $500</p>
+
+                            <h2 class="service__title">SEO</h2>
+
+                            <p class="service__description">
+                                Occupy heirloom kickstarter trust fund thundercats organic. Vegan la croix occupy
+                                slow-carb
+                                four loko.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="services__service-container col-md-6 aos fade-in-translate-up delay-3">
+                        <div class="services__service">
+                            <p class="service__price mono">From $600</p>
+
+                            <h2 class="service__title">Content Creation</h2>
+
+                            <p class="service__description">
+                                Occupy heirloom kickstarter trust fund thundercats organic. Vegan la croix occupy
+                                slow-carb
+                                four loko.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="services__service-container col-md-6 aos fade-in-translate-up delay-6">
+                        <div class="services__service">
+                            <p class="service__price mono">From $1000</p>
+
+                            <h2 class="service__title">Application Development</h2>
+
+                            <p class="service__description">
+                                Occupy heirloom kickstarter trust fund thundercats organic. Vegan la croix occupy
+                                slow-carb
+                                four loko.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="services__service-container col-md-6 aos fade-in-translate-up delay-3">
+                        <div class="services__service">
+                            <p class="service__price mono">From $400</p>
+
+                            <h2 class="service__title">Social Media</h2>
+
+                            <p class="service__description">
+                                Occupy heirloom kickstarter trust fund thundercats organic. Vegan la croix occupy
+                                slow-carb
+                                four loko.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="services__service-container col-md-6 aos fade-in-translate-up delay-6">
+                        <div class="services__service">
+                            <p class="service__price mono">From $800</p>
+
+                            <h2 class="service__title">Email Marketing</h2>
+
+                            <p class="service__description">
+                                Occupy heirloom kickstarter trust fund thundercats organic. Vegan la croix occupy
+                                slow-carb
+                                four loko.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services -->
+
+        <!-- Start Testimonials -->
+        <section id="testimonials" class="testimonials section">
+            <div class="testimonials__container container">
+                <h1 class="section__heading heading-margin mono aos fade-in-translate-up">Testimonials</h1>
+
+                <carousel-component class="aos fade-in-translate-up">
+                    <div class="carousel__slider">
+                        <div class="carousel__slide">
+                            <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="" class="testimonial__img">
+
+                            <div class="testimonial__stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                            <p class="testimonial__author">
+                                Margaret Greene
                             </p>
 
-                            <div class="project__technologies">
-                                <span class="project__technology mono">HTML</span>
-                                <span class="project__technology mono">CSS</span>
-                                <span class="project__technology mono">Javascript</span>
-                                <span class="project__technology mono">Figma</span>
-                            </div>
-
-                            <div class="project__links">
-                                <a href="#" class="project__link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
+                            <p class="testimonial__quote">
+                                Raw denim williamsburg yr, crucifix put a bird on it whatever lyft schlitz seitan lomo
+                                plaid
+                                fam cray.
+                            </p>
                         </div>
-                    </div>
 
-                    <p class="project__category mono aos fade-in-translate-up delay-3 ease-out">Front End</p>
+                        <div class="carousel__slide">
+                            <img src="https://images.pexels.com/photos/3906007/pexels-photo-3906007.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="" class="testimonial__img">
 
-                    <a href="#" class="project__title aos fade-in-translate-up delay-5 ease-out">Project Title</a>
-                </div>
+                            <div class="testimonial__stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
 
-                <div class="portfolio__project col-md-6 aos fade-in-translate-up delay-3">
-                    <div class="project__overview">
-                        <img src="https://images.pexels.com/photos/3753028/pexels-photo-3753028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                            alt="" class="project__img">
-
-                        <div class="project__details">
-                            <p class="project__brief">
-                                Cold-pressed trust fund YOLO aesthetic etsy coloring book, sartorial marfa ramps hammock
-                                90's pug franzen. Taxidermy
+                            <p class="testimonial__author">
+                                Cindy Lou
                             </p>
 
-                            <div class="project__technologies">
-                                <span class="project__technology mono">React</span>
-                                <span class="project__technology mono">Tailwind</span>
-                                <span class="project__technology mono">Node</span>
-                                <span class="project__technology mono">Express</span>
-                            </div>
-
-                            <div class="project__links">
-                                <a href="#" class="project__link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
+                            <p class="testimonial__quote">
+                                Mlkshk pickled green juice palo santo, meditation knausgaard cornhole portland lyft
+                                unicorn
+                            </p>
                         </div>
-                    </div>
 
-                    <p class="project__category mono aos fade-in-translate-up delay-5 ease-out">Full Stack</p>
+                        <div class="carousel__slide">
+                            <img src="https://images.pexels.com/photos/1211604/pexels-photo-1211604.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="" class="testimonial__img">
 
-                    <a href="#" class="project__title aos fade-in-translate-up delay-7 ease-out">Project Title</a>
-                </div>
+                            <div class="testimonial__stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
 
-                <div class="portfolio__project col-md-6 aos fade-in-translate-up">
-                    <div class="project__overview">
-                        <img src="https://images.pexels.com/photos/3705471/pexels-photo-3705471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                            alt="" class="project__img">
-
-                        <div class="project__details">
-                            <p class="project__brief">
-                                Cardigan pour-over stumptown kale chips, yuccie ugh literally celiac blog hexagon tbh
-                                banh mi humblebrag
+                            <p class="testimonial__author">
+                                John Doe
                             </p>
 
-                            <div class="project__technologies">
-                                <span class="project__technology mono">React</span>
-                                <span class="project__technology mono">PHP</span>
-                                <span class="project__technology mono">Photoshop</span>
-                            </div>
-
-                            <div class="project__links">
-                                <a href="#" class="project__link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
+                            <p class="testimonial__quote">
+                                Edison bulb freegan squid venmo post-ironic normcore man braid beard. Paleo plaid
+                                heirloom
+                            </p>
                         </div>
                     </div>
 
-                    <p class="project__category mono aos fade-in-translate-up delay-3 ease-out">Full Stack</p>
+                    <button class="carousel__button" name="previous">
+                        <i class="fas fa-long-arrow-alt-left"></i>
+                    </button>
+                    <button class="carousel__button" name="next">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+                </carousel-component>
+            </div>
+        </section>
+        <!-- End Testimonials -->
 
-                    <a href="#" class="project__title aos fade-in-translate-up delay-5 ease-out">Project Title</a>
+        <!-- Start Blog -->
+        <section id="blog" class="blog section">
+            <div class="blog__container container">
+                <h1 class="section__heading heading-margin mono aos fade-in-translate-up">Latest News</h1>
+
+                <div class="blog__posts row">
+                    <div class="blog__post-container col-md-6 col-lg-4 aos fade-in-translate-up delay-1">
+                        <div class="blog__post">
+                            <a href="#" class="post__img-container">
+                                <img src="https://images.pexels.com/photos/3835/abstract.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                    alt="" class="post__img">
+                            </a>
+
+                            <div class="post__tag-and-date mono highlight">
+                                <p class="post__tag">UI Design</p>
+                                <p class="post__date">12/25/2021</p>
+                            </div>
+
+                            <h2 class="post__title">
+                                <a href="#">
+                                    How to make your website stand out
+                                </a>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="blog__post-container col-md-6 col-lg-4 aos fade-in-translate-up delay-4">
+                        <div class="blog__post">
+                            <a href="#" class="post__img-container">
+                                <img src="https://images.pexels.com/photos/7861727/pexels-photo-7861727.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                    alt="" class="post__img">
+                            </a>
+
+                            <div class="post__tag-and-date mono highlight">
+                                <p class="post__tag">SEO</p>
+                                <p class="post__date">12/01/2021</p>
+                            </div>
+
+                            <h2 class="post__title">
+                                <a href="#">
+                                    How to get backlinks
+                                </a>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="blog__post-container col-md-6 col-lg-4 aos fade-in-translate-up delay-6">
+                        <div class="blog__post">
+                            <a href="#" class="post__img-container">
+                                <img src="https://images.pexels.com/photos/5022847/pexels-photo-5022847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                    alt="" class="post__img">
+                            </a>
+
+                            <div class="post__tag-and-date mono highlight">
+                                <p class="post__tag">Back End</p>
+                                <p class="post__date">11/20/2021</p>
+                            </div>
+
+                            <h2 class="post__title">
+                                <a href="#">
+                                    Building a REST API with Node and Express
+                                </a>
+                            </h2>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="portfolio__project col-md-6 aos fade-in-translate-up delay-3">
-                    <div class="project__overview">
-                        <img src="https://images.pexels.com/photos/3016037/pexels-photo-3016037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                            alt="" class="project__img">
+                <a href="#" class="blog__button button button--fill mono aos fade-in-translate-up delay-7">View more</a>
+            </div>
+        </section>
+        <!-- End Blog -->
 
-                        <div class="project__details">
-                            <p class="project__brief">
-                                Adaptogen +1 jean shorts, sartorial distillery aesthetic four dollar toast tattooed.
-                                Hell of selvage
+        <!-- Start Contact -->
+        <section id="contact" class="contact section">
+            <div class="contact__container container">
+                <h1 class="section__heading heading-margin mono aos fade-in-translate-up">Get In Touch</h1>
+
+                <div class="contact__row row">
+                    <div class="col-md-6 aos fade-in-translate-up delay-1">
+                        <form class="contact__form">
+                            <div class="text-field">
+                                <input type="text" name="name" id="name" class="text-field__input" />
+                                <label for="name" class="text-field__label">Name*</label>
+                            </div>
+                            <div class="text-field">
+                                <input type="email" name="email" id="email" class="text-field__input" />
+                                <label for="email" class="text-field__label">Email*</label>
+                            </div>
+                            <div class="text-field">
+                                <input type="tel" name="phone" id="phone" class="text-field__input" />
+                                <label for="phone" class="text-field__label">Phone Number</label>
+                            </div>
+                            <div class="text-field">
+                                <textarea name="message" id="message"
+                                    class="text-field__input text-field__textarea"></textarea>
+                                <label for="message" class="text-field__label">Message*</label>
+                            </div>
+
+                            <a href="#" class="button button--outline mono">
+                                Send
+                            </a>
+                        </form>
+                    </div>
+
+                    <div class="col-md-6 aos fade-in-translate-up delay-4">
+                        <div class="contact__info">
+                            <p>
+                                <span class="highlight mono">Address:</span> <span>123 Main St, Big City, NY
+                                    10001</span>
+                            </p>
+                            <p>
+                                <span class="highlight mono">Phone:</span> <span>555-555-5555</span>
+                            </p>
+                            <p>
+                                <span class="highlight mono">Email:</span> <span>me@robyn.com</span>
                             </p>
 
-                            <div class="project__technologies">
-                                <span class="project__technology mono">React</span>
-                                <span class="project__technology mono">Tailwind</span>
-                                <span class="project__technology mono">Node</span>
-                                <span class="project__technology mono">Express</span>
+                            <div class="contact__links">
+                                <a href="#" class="contact__link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <a href="#" class="contact__link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+
+                                <a href="#" class="contact__link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+
+                                <a href="#" class="contact__link">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+
+                                <a href="#" class="contact__link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+
+                                <a href="#" class="contact__link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+
+                                <a href="#" class="contact__link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
                             </div>
-
-                            <div class="project__links">
-                                <a href="#" class="project__link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p class="project__category mono aos fade-in-translate-up delay-5 ease-out">Full Stack</p>
-
-                    <a href="#" class="project__title aos fade-in-translate-up delay-7 ease-out">Project Title</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Portfolio -->
-
-    <!-- Start Services -->
-    <section id="services" class="services section">
-        <div class="services__container container">
-            <h1 class="section__heading heading-margin mono aos fade-in-translate-up">Services</h1>
-
-            <div class="services__row row">
-                <div class="services__service-container col-md-6 aos fade-in-translate-up delay-3">
-                    <div class="services__service">
-                        <p class="service__price mono">From $300</p>
-
-                        <h2 class="service__title">UI Design</h2>
-
-                        <p class="service__description">
-                            Occupy heirloom kickstarter trust fund thundercats organic. Vegan la croix occupy slow-carb
-                            four loko.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="services__service-container col-md-6 aos fade-in-translate-up delay-6">
-                    <div class="services__service">
-                        <p class="service__price mono">From $500</p>
-
-                        <h2 class="service__title">SEO</h2>
-
-                        <p class="service__description">
-                            Occupy heirloom kickstarter trust fund thundercats organic. Vegan la croix occupy slow-carb
-                            four loko.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="services__service-container col-md-6 aos fade-in-translate-up delay-3">
-                    <div class="services__service">
-                        <p class="service__price mono">From $600</p>
-
-                        <h2 class="service__title">Content Creation</h2>
-
-                        <p class="service__description">
-                            Occupy heirloom kickstarter trust fund thundercats organic. Vegan la croix occupy slow-carb
-                            four loko.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="services__service-container col-md-6 aos fade-in-translate-up delay-6">
-                    <div class="services__service">
-                        <p class="service__price mono">From $1000</p>
-
-                        <h2 class="service__title">Application Development</h2>
-
-                        <p class="service__description">
-                            Occupy heirloom kickstarter trust fund thundercats organic. Vegan la croix occupy slow-carb
-                            four loko.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="services__service-container col-md-6 aos fade-in-translate-up delay-3">
-                    <div class="services__service">
-                        <p class="service__price mono">From $400</p>
-
-                        <h2 class="service__title">Social Media</h2>
-
-                        <p class="service__description">
-                            Occupy heirloom kickstarter trust fund thundercats organic. Vegan la croix occupy slow-carb
-                            four loko.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="services__service-container col-md-6 aos fade-in-translate-up delay-6">
-                    <div class="services__service">
-                        <p class="service__price mono">From $800</p>
-
-                        <h2 class="service__title">Email Marketing</h2>
-
-                        <p class="service__description">
-                            Occupy heirloom kickstarter trust fund thundercats organic. Vegan la croix occupy slow-carb
-                            four loko.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Services -->
-
-    <!-- Start Testimonials -->
-    <section id="testimonials" class="testimonials section">
-        <div class="testimonials__container container">
-            <h1 class="section__heading heading-margin mono aos fade-in-translate-up">Testimonials</h1>
-
-            <carousel-component class="aos fade-in-translate-up">
-                <div class="carousel__slider">
-                    <div class="carousel__slide">
-                        <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                            alt="" class="testimonial__img">
-
-                        <div class="testimonial__stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-
-                        <p class="testimonial__author">
-                            Margaret Greene
-                        </p>
-
-                        <p class="testimonial__quote">
-                            Raw denim williamsburg yr, crucifix put a bird on it whatever lyft schlitz seitan lomo plaid
-                            fam cray.
-                        </p>
-                    </div>
-
-                    <div class="carousel__slide">
-                        <img src="https://images.pexels.com/photos/3906007/pexels-photo-3906007.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            alt="" class="testimonial__img">
-
-                        <div class="testimonial__stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-
-                        <p class="testimonial__author">
-                            Cindy Lou
-                        </p>
-
-                        <p class="testimonial__quote">
-                            Mlkshk pickled green juice palo santo, meditation knausgaard cornhole portland lyft unicorn
-                        </p>
-                    </div>
-
-                    <div class="carousel__slide">
-                        <img src="https://images.pexels.com/photos/1211604/pexels-photo-1211604.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                            alt="" class="testimonial__img">
-
-                        <div class="testimonial__stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-
-                        <p class="testimonial__author">
-                            John Doe
-                        </p>
-
-                        <p class="testimonial__quote">
-                            Edison bulb freegan squid venmo post-ironic normcore man braid beard. Paleo plaid heirloom
-                        </p>
-                    </div>
-                </div>
-
-                <button class="carousel__button" name="previous">
-                    <i class="fas fa-long-arrow-alt-left"></i>
-                </button>
-                <button class="carousel__button" name="next">
-                    <i class="fas fa-long-arrow-alt-right"></i>
-                </button>
-            </carousel-component>
-        </div>
-    </section>
-    <!-- End Testimonials -->
-
-    <!-- Start Blog -->
-    <section id="blog" class="blog section">
-        <div class="blog__container container">
-            <h1 class="section__heading heading-margin mono aos fade-in-translate-up">Latest News</h1>
-
-            <div class="blog__posts row">
-                <div class="blog__post-container col-md-6 col-lg-4 aos fade-in-translate-up delay-1">
-                    <div class="blog__post">
-                        <a href="#" class="post__img-container">
-                            <img src="https://images.pexels.com/photos/3835/abstract.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                alt="" class="post__img">
-                        </a>
-
-                        <div class="post__tag-and-date mono highlight">
-                            <p class="post__tag">UI Design</p>
-                            <p class="post__date">12/25/2021</p>
-                        </div>
-
-                        <h2 class="post__title">
-                            <a href="#">
-                                How to make your website stand out
-                            </a>
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="blog__post-container col-md-6 col-lg-4 aos fade-in-translate-up delay-4">
-                    <div class="blog__post">
-                        <a href="#" class="post__img-container">
-                            <img src="https://images.pexels.com/photos/7861727/pexels-photo-7861727.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                alt="" class="post__img">
-                        </a>
-
-                        <div class="post__tag-and-date mono highlight">
-                            <p class="post__tag">SEO</p>
-                            <p class="post__date">12/01/2021</p>
-                        </div>
-
-                        <h2 class="post__title">
-                            <a href="#">
-                                How to get backlinks
-                            </a>
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="blog__post-container col-md-6 col-lg-4 aos fade-in-translate-up delay-6">
-                    <div class="blog__post">
-                        <a href="#" class="post__img-container">
-                            <img src="https://images.pexels.com/photos/5022847/pexels-photo-5022847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                alt="" class="post__img">
-                        </a>
-
-                        <div class="post__tag-and-date mono highlight">
-                            <p class="post__tag">Back End</p>
-                            <p class="post__date">11/20/2021</p>
-                        </div>
-
-                        <h2 class="post__title">
-                            <a href="#">
-                                Building a REST API with Node and Express
-                            </a>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-
-            <a href="#" class="blog__button button button--fill mono aos fade-in-translate-up delay-7">View more</a>
-        </div>
-    </section>
-    <!-- End Blog -->
-
-    <!-- Start Contact -->
-    <section id="contact" class="contact section">
-        <div class="contact__container container">
-            <h1 class="section__heading heading-margin mono aos fade-in-translate-up">Get In Touch</h1>
-
-            <div class="contact__row row">
-                <div class="col-md-6 aos fade-in-translate-up delay-1">
-                    <form class="contact__form">
-                        <div class="text-field">
-                            <input type="text" name="name" id="name" class="text-field__input" />
-                            <label for="name" class="text-field__label">Name*</label>
-                        </div>
-                        <div class="text-field">
-                            <input type="email" name="email" id="email" class="text-field__input" />
-                            <label for="email" class="text-field__label">Email*</label>
-                        </div>
-                        <div class="text-field">
-                            <input type="tel" name="phone" id="phone" class="text-field__input" />
-                            <label for="phone" class="text-field__label">Phone Number</label>
-                        </div>
-                        <div class="text-field">
-                            <textarea name="message" id="message"
-                                class="text-field__input text-field__textarea"></textarea>
-                            <label for="message" class="text-field__label">Message*</label>
-                        </div>
-
-                        <a href="#" class="button button--outline mono">
-                            Send
-                        </a>
-                    </form>
-                </div>
-
-                <div class="col-md-6 aos fade-in-translate-up delay-4">
-                    <div class="contact__info">
-                        <p>
-                            <span class="highlight mono">Address:</span> <span>123 Main St, Big City, NY 10001</span>
-                        </p>
-                        <p>
-                            <span class="highlight mono">Phone:</span> <span>555-555-5555</span>
-                        </p>
-                        <p>
-                            <span class="highlight mono">Email:</span> <span>me@robyn.com</span>
-                        </p>
-
-                        <div class="contact__links">
-                            <a href="#" class="contact__link">
-                                <i class="fab fa-github"></i>
-                            </a>
-
-                            <a href="#" class="contact__link">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-
-                            <a href="#" class="contact__link">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-
-                            <a href="#" class="contact__link">
-                                <i class="fab fa-dribbble"></i>
-                            </a>
-
-                            <a href="#" class="contact__link">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-
-                            <a href="#" class="contact__link">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-
-                            <a href="#" class="contact__link">
-                                <i class="fab fa-youtube"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Contact -->
+        </section>
+        <!-- End Contact -->
+    </main>
 
     <script src="./js/header.js" defer></script>
     <script src="./js/hero.js" defer></script>

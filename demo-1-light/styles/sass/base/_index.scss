@@ -19,3 +19,20 @@ body {
         }
     }
 }
+
+.skip-to-main{
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+
+    &:focus{
+        width: auto;
+        height: auto;
+        font-size: var(--font-5);
+        color: var(--color-primary-x-dark);
+    }
+}

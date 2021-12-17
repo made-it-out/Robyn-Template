@@ -113,6 +113,22 @@ body.body--modal-open, body.body--navbar-shown {
   position: fixed;
 }
 
+.skip-to-main {
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.skip-to-main:focus {
+  width: auto;
+  height: auto;
+  font-size: var(--font-5);
+  color: var(--color-primary-x-dark);
+}
+
 /*
 ===================
 Animation utilities
@@ -539,7 +555,7 @@ Header
   text-decoration: none;
   transition: color 250ms ease-in-out;
 }
-.navbar__link:hover {
+.navbar__link:hover, .navbar__link:focus {
   color: var(--color-primary);
 }
 
@@ -1612,10 +1628,7 @@ Testimonials
 Logo
 ====
 */
-.logo-svg {
-  overflow: visible;
-}
-.logo-svg:hover .logo-square {
+.logo:hover .logo-square, .logo:focus .logo-square {
   -webkit-animation-name: logo-spin;
           animation-name: logo-spin;
   -webkit-animation-duration: 3000ms;
@@ -1626,6 +1639,10 @@ Logo
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+}
+
+.logo-svg {
+  overflow: visible;
 }
 
 .logo-square {
