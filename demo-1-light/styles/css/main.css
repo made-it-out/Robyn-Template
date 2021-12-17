@@ -481,6 +481,9 @@ Header
   cursor: pointer;
   z-index: 2;
   font-size: var(--font-7);
+  border: none;
+  background-color: transparent;
+  color: var(--color-primary-x-dark);
 }
 @media only screen and (min-width: 1025px) {
   .header__toggle {
@@ -489,7 +492,7 @@ Header
 }
 
 .navbar {
-  z-index: 2;
+  z-index: 1;
   background-color: transparent;
   position: absolute;
   width: 0;

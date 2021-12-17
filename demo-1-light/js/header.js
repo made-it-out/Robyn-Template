@@ -10,7 +10,7 @@ function init() {
     headerToggle.addEventListener('click', toggleNavbar)
     headerToggle.addEventListener('keydown', (e) => {
         if (e.keyCode === 13 || e.keyCode === 32) {
-            toggleNavbar()
+            toggleNavbar
         }
     })
 
