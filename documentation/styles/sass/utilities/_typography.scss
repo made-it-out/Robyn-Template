@@ -1,4 +1,4 @@
-@use '../abstracts/' as a;
+@use '../abstracts/'as a;
 /*
 ====================
 Typography utilities
@@ -24,5 +24,14 @@ Typography utilities
 
     @include a.mq-min(768px) {
         margin-bottom: 4rem;
+    }
+}
+
+.subheading {
+    font-size: var(--font-6);
+    color: var(--color-primary-x-dark);
+
+    @include a.mq-min(768px) {
+        font-size: var(--font-7);
     }
 }

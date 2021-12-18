@@ -105,6 +105,7 @@
                     <a href="#getting-started" class="navbar__link">Getting Started</a>
                     <a href="#file-structure" class="navbar__link">File Structure</a>
                     <a href="#customization" class="navbar__link">Customization</a>
+                    <a href="#additional-notes" class="navbar__link">Additional Notes</a>
                 </nav>
             </div>
             <!-- End Navbar -->
@@ -115,7 +116,8 @@
                 <main id="MainContent" class="docs">
                     <section id="getting-started" class="getting-started section">
                         <h1 class="section__heading">Getting Started</h1>
-                        <div class="docs__welcome">
+
+                        <div class="docs__content">
                             <h2>Welcome 👋</h2>
 
                             <p>Thank you for choosing Robyn!</p>
@@ -214,15 +216,36 @@
                     <section id="customization" class="customization section">
                         <h1 class="section__heading">Customization</h1>
 
-                        <h2 class="subheading">Changing Colors</h2>
+                        <div class="docs__content">
+                            <h2 class="subheading">Changing Colors</h2>
 
+                            <p>Color variables can be changed at <code>/styles/sass/base/_colors.scss</code></p>
+    
+                            <img src="./assets/colors.PNG" alt="colors stylesheet" class="docs__image">
+
+                            <h2 class="subheading">Changing Typography</h2>
+
+                            <p>Typography variables can be changed at <code>/styles/sass/base/_typography.scss</code></p>
+                            
+                            <img src="./assets/typography.PNG" alt="typography stylesheet" class="docs__image">
+
+                            <h2 class="subheading">Changing Hero Tag</h2>
+
+                            <p>The words used in the hero tag (&#60; &#47;&#62;) can be changed at <code>/js/hero.js</code></p>
+
+                            <p>Just change the strings in the "<span class="highlight">arrayOfTags</span>" const</p>
+                            
+                            <img src="./assets/hero-js.PNG" alt="hero script" class="docs__image">
+
+                            <p>You can also easily change the delay between each character being typed (<span class="highlight">characterDelay</span>), as well as the initial delay (<span class="highlight">initialDelay</span>) to accomodate the fade in animation on scroll.</p>
+                        </div>
                         
                     </section>
 
                     <section id="additional-notes" class="additional-notes section">
                         <h1 class="section__heading">Additional Notes</h1>
 
-                        <div class="docs__notes">
+                        <div class="docs__content">
                             <p>Robyn uses <a href="https://getbootstrap.com/docs/5.0/layout/grid/" target="_blank"
                                     class="docs__link">Bootstrap Grid</a>, <a href="https://fonts.google.com"
                                     target="_blank" class="docs__link">Google
@@ -239,25 +262,7 @@
         </div>
     </div>
 
-
-    <!-- Start Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="footer__bottom small">
-                        <div class="footer__bottom-links">
-                            <a href="https://themeforest.net" target="_blank" class="footer__bottom-link">Help</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
-
-    <script src="./js/header.js"></script>
-    <script src="./js/accordion.js"></script>
+    <script src="./js/header.js" defer></script>
 </body>
 
 </html>

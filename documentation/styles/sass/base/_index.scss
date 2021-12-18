@@ -9,15 +9,6 @@ html {
 body {
     background-color: var(--color-gray-2);
     font-family: var(--font-sans);
-
-    &.body {
-
-        &--modal-open,
-        &--navbar-shown {
-            // overflow-y: hidden;
-            // position: fixed;
-        }
-    }
 }
 
 .skip-to-main{

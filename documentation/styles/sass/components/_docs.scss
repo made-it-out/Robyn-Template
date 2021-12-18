@@ -5,13 +5,14 @@
 
     @include a.mq-min(768px){
         padding-left: 2.5rem;
+        font-size: var(--font-5);
     }
 
-    &__welcome,
-    &__notes {
+    &__content {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        line-height: 1.5;
     }
 
     &__link {
@@ -131,5 +132,6 @@
         background-color: var(--color-primary-x-dark);
         padding: .2em .5em;
         color: var(--color-white);
+        word-break: break-word;
     }
 }

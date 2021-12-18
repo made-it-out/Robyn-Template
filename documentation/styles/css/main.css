@@ -108,6 +108,7 @@ body {
   background-color: var(--color-gray-2);
   font-family: var(--font-sans);
 }
+
 .skip-to-main {
   width: 1px;
   height: 1px;
@@ -396,6 +397,16 @@ Typography utilities
   }
 }
 
+.subheading {
+  font-size: var(--font-6);
+  color: var(--color-primary-x-dark);
+}
+@media only screen and (min-width: 768px) {
+  .subheading {
+    font-size: var(--font-7);
+  }
+}
+
 /*
 ======
 Header
@@ -546,12 +557,14 @@ Logo
 @media only screen and (min-width: 768px) {
   .docs {
     padding-left: 2.5rem;
+    font-size: var(--font-5);
   }
 }
-.docs__welcome, .docs__notes {
+.docs__content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  line-height: 1.5;
 }
 .docs__link {
   text-decoration: none;
@@ -660,24 +673,5 @@ Logo
   background-color: var(--color-primary-x-dark);
   padding: 0.2em 0.5em;
   color: var(--color-white);
-}
-
-.footer {
-  background-color: var(--color-black);
-  color: var(--color-dark-grey);
-  padding: 3rem 0;
-  margin-top: auto;
-}
-.footer__bottom {
-  display: flex;
-  border-top: 1px solid var(--color-primary);
-  padding-top: 1.25rem;
-}
-.footer__bottom-link {
-  color: var(--color-dark-grey);
-  margin-right: 0.5rem;
-  text-decoration: none;
-}
-.footer__bottom-link:hover {
-  color: var(--color-primary);
+  word-break: break-word;
 }
