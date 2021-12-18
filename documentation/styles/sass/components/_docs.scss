@@ -1,21 +1,10 @@
 @use '../abstracts/'as a;
 
 .docs {
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        padding: 2rem;
-        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.23);
-    }
+    font-size: var(--font-4);
 
-    &__container {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-
-        @include a.mq-min(768px) {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-        }
+    @include a.mq-min(768px){
+        padding-left: 2.5rem;
     }
 
     &__welcome,
@@ -35,11 +24,11 @@
         width: 100%;
 
         @include a.mq-min(576px) {
-            border: 1px solid var(--color-dark-grey);
+            border: 1px solid var(--color-primary-light);
         }
 
         thead {
-            background-color: var(--color-light-grey);
+            background-color: var(--color-primary-light);
 
             tr {
                 display: none;
@@ -53,13 +42,13 @@
         tr {
             display: block;
             margin-bottom: 2rem;
-            border: 1px solid var(--color-dark-grey);
+            border: 1px solid var(--color-primary-light);
 
             @include a.mq-min(576px) {
                 display: table-row;
                 margin-bottom: 0;
                 border: none;
-                border-bottom: 1px solid var(--color-dark-grey);
+                border-bottom: 1px solid var(--color-primary-light);
             }
         }
 
@@ -78,7 +67,7 @@
 
             &:not(:first-child) {
                 @include a.mq-min(576px) {
-                    border-left: 1px solid var(--color-dark-grey);
+                    border-left: 1px solid var(--color-primary-light);
                 }
             }
 
@@ -89,7 +78,7 @@
             display: block;
 
             &:first-child {
-                background-color: var(--color-light-grey);
+                background-color: var(--color-primary-light);
             }
 
             @include a.mq-min(576px) {
@@ -139,7 +128,7 @@
     }
 
     code {
-        background-color: #181818;
+        background-color: var(--color-primary-x-dark);
         padding: .2em .5em;
         color: var(--color-white);
     }

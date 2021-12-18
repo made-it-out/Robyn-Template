@@ -1,3 +1,38 @@
 @forward './reset';
-@forward './root';
+@forward './colors';
 @forward './typography';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-gray-2);
+    font-family: var(--font-sans);
+
+    &.body {
+
+        &--modal-open,
+        &--navbar-shown {
+            // overflow-y: hidden;
+            // position: fixed;
+        }
+    }
+}
+
+.skip-to-main{
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+
+    &:focus{
+        width: auto;
+        height: auto;
+        font-size: var(--font-5);
+        color: var(--color-primary-x-dark);
+    }
+}

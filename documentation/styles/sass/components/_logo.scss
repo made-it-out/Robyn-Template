@@ -1,0 +1,30 @@
+/*
+====
+Logo
+====
+*/
+
+.logo{
+    &:hover .logo-square,
+    &:focus .logo-square {
+        animation-name: logo-spin;
+        animation-duration: 3000ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+.logo-svg {
+    overflow: visible;
+}
+
+.logo-square {
+    transform-origin: center;
+}
+
+@keyframes logo-spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

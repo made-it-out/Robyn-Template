@@ -1,53 +1,78 @@
+@use '../abstracts/'as a;
+/*
+======
+Header
+======
+*/
+
 .header {
-    padding: 2rem 0;
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.23);
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    color: var(--color-primary-x-dark);
+    z-index: 2;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
 
     &__container {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
-    &__logo-container {
-        grid-area: header-logo;
-        max-width: 150px;
-        position: relative;
-        align-self: center;
+    &__toggle {
+        cursor: pointer;
+        z-index: 2;
+        font-size: var(--font-7);
+        border: none;
+        background-color: transparent;
+        color: var(--color-primary-x-dark);
 
-        &:hover {
-            .header__logo--primary {
-                opacity: 0;
-            }
-
-            .header__logo--secondary {
-                opacity: 1;
-            }
+        @include a.mq-min(768px) {
+            display: none;
         }
     }
+}
 
-    &__logo {
+.navbar {
+    z-index: 1;
+    color: var(--color-white);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: var(--font-7);
+
+    &--shown {
         width: 100%;
-        height: auto;
-        object-fit: cover;
-        object-position: center;
-        transition: opacity 200ms ease-out;
-
-        &--primary {
-            position: relative;
-            opacity: 1;
-        }
-
-        &--secondary {
-            opacity: 0;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
-        &:hover {}
+        height: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
-    &__purchase{
-        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
+    @include a.mq-min(768px) {
+        width: fit-content;
+        height: 100%;
+        padding-top: 4rem;
+        padding-left: 2rem;
+        padding-bottom: 4rem;
+        position: fixed;
+    }
+
+    &__column {
+        background-color: var(--color-primary);
+    }
+
+    &__link {
+        text-decoration: none;
+        transition: color 250ms ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: var(--color-primary-light);
+        }
     }
 }
