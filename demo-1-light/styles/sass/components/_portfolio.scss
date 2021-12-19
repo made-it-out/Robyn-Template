@@ -74,6 +74,7 @@ Portfolio
         transform: translateY(-2rem);
         transition: opacity 400ms ease-out, transform 400ms ease-out;
         font-size: var(--font-5);
+        line-height: 1.5;
     }
 
     &__technologies, &__links{

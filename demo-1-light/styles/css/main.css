@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800;900&display=swap");
 /*
 =====
 Reset
@@ -80,7 +80,7 @@ Typography
 ==========
 */
 :root {
-  --font-sans: "Ubuntu", sans-serif;
+  --font-sans: "Libre Franklin", sans-serif;
   --font-mono: "Cutive Mono", monospace;
 }
 
@@ -1405,6 +1405,7 @@ Portfolio
   transform: translateY(-2rem);
   transition: opacity 400ms ease-out, transform 400ms ease-out;
   font-size: var(--font-5);
+  line-height: 1.5;
 }
 .project__technologies, .project__links {
   opacity: 0;
@@ -1498,6 +1499,7 @@ Services
 .service__description {
   font-size: var(--font-4);
   color: var(--color-white);
+  line-height: 1.5;
 }
 
 /*
