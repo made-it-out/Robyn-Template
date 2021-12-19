@@ -30,7 +30,7 @@ Testimonials
         color: var(--color-secondary);
 
         @include a.mq-min(768px) {
-            font-size: var(--font-8);
+            font-size: var(--font-7);
         }
     }
 
@@ -45,10 +45,10 @@ Testimonials
 
     &__quote {
         font-size: var(--font-6);
-        color: var(--color-primary-x-light);
+        color: var(--color-white);
 
         @include a.mq-min(768px) {
-            font-size: var(--font-8);
+            font-size: var(--font-7);
         }
     }
 }
