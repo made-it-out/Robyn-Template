@@ -69,7 +69,9 @@ Colors
   --color-primary: #7F8F9C;
   --color-primary-dark: #1C2C39;
   --color-primary-x-dark: #031320;
-  --color-secondary: #eee950;
+  --color-secondary-light: #eee950;
+  --color-secondary: #f1e100;
+  --color-secondary-dark: #d5c810;
 }
 
 /*
@@ -511,7 +513,7 @@ Header
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary-light);
   font-size: var(--font-8);
   /* Shorten animation delay for expanded mobile nav links */
 }
@@ -680,11 +682,11 @@ tabs-component {
 }
 .tabs__heading:hover, .tabs__heading:focus {
   background-color: var(--color-primary);
-  color: var(--color-secondary);
+  color: var(--color-secondary-light);
 }
 .tabs__heading--active {
   background-color: var(--color-primary);
-  color: var(--color-secondary);
+  color: var(--color-secondary-light);
   filter: drop-shadow(0px 10px 10px #000000);
 }
 
@@ -704,7 +706,7 @@ tabs-component {
   padding: 16px;
   overflow: hidden;
   display: none;
-  color: var(--color-primary-x-light);
+  color: var(--color-white);
 }
 .tabs__content--active {
   display: flex;
@@ -719,7 +721,7 @@ tabs-component {
   margin-bottom: 1rem;
 }
 .tabs__content li::marker {
-  color: var(--color-secondary);
+  color: var(--color-secondary-light);
 }
 .tabs__content p {
   font-size: var(--font-4);
@@ -746,7 +748,6 @@ carousel-component {
   display: flex;
   align-items: center;
 }
-
 .carousel__slide {
   position: relative;
   width: 100%;
@@ -762,11 +763,13 @@ carousel-component {
   text-align: center;
   padding: 2rem;
 }
-
+.carousel__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 .carousel__button {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
   padding: 0.5rem;
   border-radius: 50%;
   display: flex;
@@ -774,19 +777,11 @@ carousel-component {
   align-items: center;
   border: none;
   font-size: var(--font-7);
-  background-color: var(--color-primary-x-dark);
-  color: var(--color-secondary);
-  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
-}
-.carousel__button[name=previous] {
-  left: 0;
-}
-.carousel__button[name=next] {
-  right: 0;
+  color: var(--color-primary-x-dark);
+  transition: color 200ms ease-in-out;
 }
 .carousel__button:hover, .carousel__button:focus {
-  color: var(--color-primary-x-dark);
-  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 /*
@@ -1003,7 +998,7 @@ Animations for bottom to top
 }
 
 .card-deck__card:nth-child(even)::before {
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary-light);
 }
 
 .card-deck__card:nth-child(odd)::before {
@@ -1459,30 +1454,30 @@ Services
   background-image: url("../../assets/bamboo-secondary.png");
 }
 .services__service-container:nth-child(odd) .services__service .service__price {
-  color: var(--color-secondary);
+  color: var(--color-secondary-light);
 }
 .services__service-container:nth-child(odd) .services__service .service__title {
   color: var(--color-white);
 }
 .services__service-container:nth-child(odd) .services__service .service__description {
-  color: var(--color-primary-light);
+  color: var(--color-white);
 }
 .services__service-container:nth-child(even) .services__service {
   position: relative;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary-x-dark);
   overflow: hidden;
 }
 .services__service-container:nth-child(even) .services__service::before {
-  background-image: url("../../assets/bricks-dark.png");
+  background-image: url("../../assets/bricks-secondary.png");
 }
 .services__service-container:nth-child(even) .services__service .service__price {
-  color: var(--color-primary-x-dark);
+  color: var(--color-secondary-light);
 }
 .services__service-container:nth-child(even) .services__service .service__title {
-  color: var(--color-primary-x-dark);
+  color: var(--color-white);
 }
 .services__service-container:nth-child(even) .services__service .service__description {
-  color: var(--color-primary-dark);
+  color: var(--color-white);
 }
 .services__service {
   cursor: pointer;
@@ -1604,7 +1599,7 @@ Testimonials
 }
 @media only screen and (min-width: 768px) {
   .testimonial__stars {
-    font-size: var(--font-8);
+    font-size: var(--font-7);
   }
 }
 .testimonial__author {
@@ -1622,7 +1617,7 @@ Testimonials
 }
 @media only screen and (min-width: 768px) {
   .testimonial__quote {
-    font-size: var(--font-8);
+    font-size: var(--font-7);
   }
 }
 

@@ -33,12 +33,12 @@ tabs-component {
     &:hover,
     &:focus {
         background-color: var(--color-primary);
-        color: var(--color-secondary);
+        color: var(--color-secondary-light);
     }
 
     &--active {
         background-color: var(--color-primary);
-        color: var(--color-secondary);
+        color: var(--color-secondary-light);
         filter: drop-shadow(0px 10px 10px #000000);
     }
 }
@@ -58,7 +58,7 @@ tabs-component {
     padding: 16px;
     overflow: hidden;
     display: none;
-    color: var(--color-primary-x-light);
+    color: var(--color-white);
 
     &--active {
         display: flex;
@@ -75,7 +75,7 @@ tabs-component {
         margin-bottom: 1rem;
 
         &::marker {
-            color: var(--color-secondary);
+            color: var(--color-secondary-light);
         }
     }
 

@@ -30,7 +30,7 @@ Testimonials
         color: var(--color-secondary);
 
         @include a.mq-min(768px) {
-            font-size: var(--font-8);
+            font-size: var(--font-7);
         }
     }
 
@@ -48,7 +48,7 @@ Testimonials
         color: var(--color-primary-dark);
 
         @include a.mq-min(768px) {
-            font-size: var(--font-8);
+            font-size: var(--font-7);
         }
     }
 }

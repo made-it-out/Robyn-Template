@@ -17,35 +17,35 @@ Services
 
         .service{
             &__price{
-                color:var(--color-secondary);
+                color:var(--color-secondary-light);
             }
             &__title{
                 color: var(--color-white);
             }
             &__description{
-                color: var(--color-primary-light);
+                color: var(--color-white);
             }
         }
     }
 
     &__service-container:nth-child(even) &__service{
         position: relative;
-        background-color: var(--color-secondary);
+        background-color: var(--color-primary-x-dark);
         overflow: hidden;
         
         &::before{
-            background-image: url('../../assets/bricks-dark.png');
+            background-image: url('../../assets/bricks-secondary.png');
         }
 
         .service{
             &__price{
-                color:var(--color-primary-x-dark);
+                color: var(--color-secondary-light);
             }
             &__title{
-                color: var(--color-primary-x-dark);
+                color: var(--color-white);
             }
             &__description{
-                color: var(--color-primary-dark);
+                color: var(--color-white);
             }
         }
     }
